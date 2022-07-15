@@ -35,3 +35,8 @@ Using the following keys and encrypted messages check to make sure your function
   - JXKAQYXKH - key: 23
   - BSUOHWJS - key: (-14)
   - HUQBBOBEDWJUNJMYJXRYWDKCRUH - key: 135762
+
+
+Now that you have built a Caesar Cipher we are going to take it a step further and implement a Vignere Cipher.
+A Vignere Cipher is a Caesar Cipher except the offset for each letter is based on a word and different for each letter, instead of the same offset for every letter.
+For example, if we have a key of "DOG", when we encrypt a message "PUPPY" it will update
