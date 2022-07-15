@@ -24,13 +24,12 @@ Implementing this in code is a very straight forward process, simply convert all
 In this cipher the Key is the distance we are offsetting by
 
 #### **Task: Build a Caesar Cipher encyrption and decryption**
-- Encyrption function must take input (key, message_to_encrypt) and output (encrypted_message)
-- Decyrption function must output (encrypted_message, key) and output (message_to_encrypt)
+- Encyrption function must take input (integer(key), message_to_encrypt) and output (encrypted_message)
+- Decyrption function must output (encrypted_message, integer(key)) and output (message_to_encrypt)
 
-Using your new functions check against the following encrypted messages (Dont forget to account for overflow)
-Note- All messages are only ASCII letters A-Z (https://www.asciitable.com/)
+Note- All messages are only ASCII letters A-Z https://www.asciitable.com/ (Dont forget to account for overflow -- Z + 1 offset becomes A)
 Using the following keys and encrypted messages check to make sure your functions are working:
-##### **Submit the following decrypted messages:**
+##### **Submit the following Caesar decrypted messages:**
   - ALZAPUN - key: 7
   - JXKAQYXKH - key: 23
   - BSUOHWJS - key: (-14)
@@ -39,4 +38,25 @@ Using the following keys and encrypted messages check to make sure your function
 
 Now that you have built a Caesar Cipher we are going to take it a step further and implement a Vignere Cipher.
 A Vignere Cipher is a Caesar Cipher except the offset for each letter is based on a word and different for each letter, instead of the same offset for every letter.
-For example, if we have a key of "DOG", when we encrypt a message "PUPPY" it will update
+Here is an example from GeeksForGeeks - https://www.geeksforgeeks.org/vigenere-cipher/?ref=lbp
+
+Input : Plaintext :   GEEKSFORGEEKS
+             Keyword :  AYUSH
+Output : Ciphertext :  GCYCZFMLYLEIM
+For generating key, the given keyword is repeated
+in a circular manner until it matches the length of 
+the plain text.
+The keyword "AYUSH" generates the key "AYUSHAYUSHAYU"
+The plain text is then encrypted using the process 
+explained below.
+
+#### **Task: Build a Vigenere Cipher encyrption and decryption**
+- Encyrption function must take input (string(key), message_to_encrypt) and output (encrypted_message)
+- Decyrption function must output (encrypted_message, string(key)) and output (message_to_encrypt)
+
+Remember we are only usings character A-Z on the ascii table. Be sure to check for anything outside that range and wrap around if needed.
+Using the following keys and encrypted messages check to make sure your functions are working:
+##### **Submit the following Vigenere decrypted messages:**
+  - CSWMUCWBYHLQXRCSYQQOFQWBPSM - key: INTERN
+  - VVJHSMHDLHU - key: CAT
+  - VQPUXBCLYCOHNXUIBNUBHITCJJAKHCQXSQCPHXYPDAGJZQCFKUSKIFQAR - key: BIGBOI
