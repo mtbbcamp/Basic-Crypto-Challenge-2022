@@ -30,8 +30,8 @@ In this cipher the Key is the distance we are offsetting by
 Using your new functions check against the following encrypted messages (Dont forget to account for overflow)
 Note- All messages are only ASCII letters A-Z (https://www.asciitable.com/)
 Using the following keys and encrypted messages check to make sure your functions are working:
-#####**Submit the following decrypted messages:**
--ALZAPUN - 7
--JXKAQYXKH - 23
--BSUOHWJS - (-14)
--HUQBBOBEDWJUNJMYJXRYWDKCRUH - 135762
+##### **Submit the following decrypted messages:**
+  - ALZAPUN - key: 7
+  - JXKAQYXKH - key: 23
+  - BSUOHWJS - key: (-14)
+  - HUQBBOBEDWJUNJMYJXRYWDKCRUH - key: 135762
