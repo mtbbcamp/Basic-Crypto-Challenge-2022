@@ -28,4 +28,10 @@ In this cipher the Key is the distance we are offsetting by
 - Decyrption function must output (encrypted_message, key) and output (message_to_encrypt)
 
 Using your new functions check against the following encrypted messages (Dont forget to account for overflow)
-Note- All messages are only ASCII letters a-Z
+Note- All messages are only ASCII letters A-Z (https://www.asciitable.com/)
+Using the following keys and encrypted messages check to make sure your functions are working:
+#####**Submit the following decrypted messages:**
+-ALZAPUN - 7
+-JXKAQYXKH - 23
+-BSUOHWJS - (-14)
+-HUQBBOBEDWJUNJMYJXRYWDKCRUH - 135762
