@@ -82,3 +82,16 @@ For bonus points track how long each varation takes to solve!
   - Vigenere - JSGZMGAXKF - BRUTEFORCE - key length (4)
   - Vigenere - EGPHYIDMQY - BRUTEFORCE - key length (5)
   - Vigenere - QEBTEFDEJE - BRUTEFORCE - key length (6) -- Will take a long time (if this takes too long feel free to abort)
+
+# Submit the following
+
+Caesar Cipher Code
+Answers to Caesar Cipher messages
+Bonus Points: Caesar Cipher encrypted message with key
+
+Vigenere Cipher Code
+Answers to Vigenere Cipher messages
+Bonus Points: Vigenere Cipher encrypted message with key
+
+Brute Force Solutions
+Bonus Points: How long it took to brute force each solution
