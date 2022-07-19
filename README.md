@@ -11,6 +11,7 @@ In this challenge you will learn some basics of cryptography, including:
   
   
 No matter your understanding or skill level this challenge should take no more than 2-3 hours
+**I built and provided stubs in python, feel free to complete this challenge in any language of your choosing!**
 As always if you need help please reach out to the Coding Challenges committee or myself (bcamp@mtb.com)
 
 # Building a Caesar Cipher and Vignere Cipher
