@@ -35,6 +35,9 @@ Using the following keys and encrypted messages check to make sure your function
   - BSUOHWJS - key: (-14)
   - HUQBBOBEDWJUNJMYJXRYWDKCRUH - key: 135762
 
+**Bonus**
+  - Encrypt a message using the Caesar Cipher and submit the encrypted message and key. The winner will get their message posted in the weekly newsletter!
+
 
 Now that you have built a Caesar Cipher we are going to take it a step further and implement a Vignere Cipher.
 A Vignere Cipher is a Caesar Cipher except the offset for each letter is based on a word and different for each letter, instead of the same offset for every letter.
@@ -60,3 +63,22 @@ Using the following keys and encrypted messages check to make sure your function
   - CSWMUCWBYHLQXRCSYQQOFQWBPSM - key: INTERN
   - VVJHSMHDLHU - key: CAT
   - VQPUXBCLYCOHNXUIBNUBHITCJJAKHCQXSQCPHXYPDAGJZQCFKUSKIFQAR - key: BIGBOI
+
+**Bonus**
+  - Encrypt a message using the Vigenere Cipher and submit the encrypted message and key. The winner will get their message posted in the weekly newsletter!
+
+
+### **Task: Applying this to real life**
+
+While these ciphers are simple to build and in concept they still require decent computing power to brute force solve. (Nothing compared to modern ciphers but still surpisingly strong).
+In your last task I want you to brute force find the keys to the following encryptions. I will provide all the details expect for the key itself.
+For bonus points track how long each varation takes to solve!
+
+##### **Find the keys to the following ciphers (Bonus: track the time it takes to brute force):**
+  - Caesar - DTWVGHQTEG - BRUTEFORCE - key length (3)
+  - Caesar - CSVUFGPSDF - BRUTEFORCE - key length (4)
+  - Caesar - KADCNOXALN - BRUTEFORCE - key length (5)
+  - Vigenere - NGRFTCAGZQ - BRUTEFORCE - key length (3)
+  - Vigenere - JSGZMGAXKF - BRUTEFORCE - key length (4)
+  - Vigenere - EGPHYIDMQY - BRUTEFORCE - key length (5)
+  - Vigenere - QEBTEFDEJE - BRUTEFORCE - key length (6) -- Will take a long time (if this takes too long feel free to abort)
