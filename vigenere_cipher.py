@@ -1,3 +1,5 @@
+from caesar_cipher import cc_decrypt
+import time
 def vc_encrypt(message, key):
     encryption = ""
     #Expand key to have same length as message
@@ -8,9 +10,28 @@ def vc_encrypt(message, key):
         key_idx = (key_idx+1) % len(orig_key)
     for i in range(0, len(key)):
         encryption += chr(((ord(message[i]) + ord(key[i])) % 26) + 65)        
-    print(encryption)
     return encryption
 
+
+def vc_brute(cipher, plain, keylen):
+    out = ''
+    for i in range(0, len(cipher)):
+        k = 0
+        c = cipher[i]
+        p = plain[i]
+        d = ''
+        while d != p:
+            d = cc_decrypt(c, k)
+            #print(c + ' -> ' + p)
+            k += 1
+        #print()
+        k -= 1
+        out = out + chr(k + 65)
+    out = out[:keylen]
+    print("KEY: " + out)
+    print("PLAINTEXT: ", end='')
+    vc_decrypt(cipher, out)
+    return out
 
 def vc_decrypt(encrypted_message, key):
     #Expand key to have same length as message
@@ -29,12 +50,34 @@ def vc_decrypt(encrypted_message, key):
 
 
 def run_tests():
+    print("======KNOWN KEY======")
     vc_decrypt("BRVLTBVAXGKPWQBRXPPNEPVAORL", "INTERN")
     vc_decrypt("UUIGRLGCKGT", "CAT")
     vc_decrypt("UPOTWABKXBNGMWTHAMTAGHSBIIZJGBPWRPBOGWXOCZFIYPBEJTRJHEPZQ", "BIGBOI")
-    vc_encrypt('THEQUICKBROWNFOXJUMPSOVERTHELAZYDOG', 'SECRET')
-    vc_decrypt('LLGHYBUODISPFJQONNETUFZXJXJVPTRCFFK', 'SECRET')
+    
+    print("======BRUTE FORCE=====")
+    start = time.time()
+    vc_brute('EFAWSLRFIH', 'BRUTEFORCE', 3)
+    end = time.time()
+    print("Took " + str(end-start) + " seconds to decrypt EFAWSLRFIH")
 
+    start = time.time()
+    vc_brute('UNCZXBWXVA', 'BRUTEFORCE', 4)
+    end = time.time()
+    print("Took " + str(end-start) + " seconds to decrypt UNCZXBWXVA")
+
+    start = time.time()
+    vc_brute('URHZSYOEIS', 'BRUTEFORCE', 5)
+    end = time.time()
+    print("Took " + str(end-start) + " seconds to decrypt URHZSYOEIS")
+
+    start = time.time()
+    vc_brute('MFHZIWZFPK', 'BRUTEFORCE', 6)
+    end = time.time()
+    print("Took " + str(end-start) + " seconds to decrypt MFHZIWZFPK")
+
+    print("=====ENCRYPT=====")
+    print(vc_encrypt('THISMESSAGEWILLSELFDESTRUCT', 'SECURE') + ', SECURE')
 if __name__ == '__main__':
     run_tests()
 
