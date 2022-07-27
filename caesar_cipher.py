@@ -12,17 +12,12 @@ def cc_decrypt(encrypted_message, key):
         key *= -1
     for c in encrypted_message:
         #Convert to ASCII code
-        c = ord(c)
         #Convert to position in the alphabet
-        c -= 65
         #Apply decrpytion
-        c -= key
-        c%=26
         #Back to ASCII code
-        c += 65
         #Back to character
-        c = chr(c)
-        decryption += c
+        d = chr((((ord(c)-65) - key) % 26) + 65)
+        decryption += d
          
 
     return decryption
@@ -33,7 +28,6 @@ def run_tests():
     print(cc_decrypt("JXKAQYXKH ", 23))
     print(cc_decrypt("BSUOHWJS", -14))
     print(cc_decrypt("HUQBBOBEDWJUNJMYJXRYWDKCRUH", 135762))
-
 
 if __name__ == '__main__':
     run_tests()
