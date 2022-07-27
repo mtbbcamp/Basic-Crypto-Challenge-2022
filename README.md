@@ -61,9 +61,9 @@ explained below.
 Remember we are only usings character A-Z on the ascii table. Be sure to check for anything outside that range and wrap around if needed.
 Using the following keys and encrypted messages check to make sure your functions are working:
 ##### **Submit the following Vigenere decrypted messages:**
-  - CSWMUCWBYHLQXRCSYQQOFQWBPSM - key: INTERN
-  - VVJHSMHDLHU - key: CAT
-  - VQPUXBCLYCOHNXUIBNUBHITCJJAKHCQXSQCPHXYPDAGJZQCFKUSKIFQAR - key: BIGBOI
+  - BRVLTBVAXGKPWQBRXPPNEPVAORL - key: INTERN
+  - UUIGRLGCKGT - key: CAT
+  - UPOTWABKXBNGMWTHAMTAGHSBIIZJGBPWRPBOGWXOCZFIYPBEJTRJHEPZQ - key: BIGBOI
 
 **Bonus**
   - Encrypt a message using the Vigenere Cipher and submit the encrypted message and key. The winner will get their message posted in the weekly newsletter!
