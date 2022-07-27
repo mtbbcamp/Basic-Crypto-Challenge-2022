@@ -35,7 +35,7 @@ def cc_decrypt(encrypted_message, key):
 def run_tests():
     print("=====KNOWN KEY=====")
     print(cc_decrypt("ALZAPUN", 7))
-    print(cc_decrypt("JXKAQYXKH ", 23))
+    print(cc_decrypt("JXKAQYXKH", 23))
     print(cc_decrypt("BSUOHWJS", -14))
     print(cc_decrypt("HUQBBOBEDWJUNJMYJXRYWDKCRUH", 135762))
 
