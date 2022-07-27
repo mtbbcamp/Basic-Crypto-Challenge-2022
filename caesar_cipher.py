@@ -1,10 +1,17 @@
-
+import time
 def cc_encrypt(message, key):
     encryption = ""
     for c in message:
         encryption = encryption + chr((ord(c) + key) % 26 + 65) 
     return encryption
 
+def cc_bruteforce(ciphertext):
+    key = 0
+    plaintext = ''
+    while plaintext != 'BRUTEFORCE':
+        plaintext = cc_decrypt(ciphertext, key)
+        key += 1
+    return plaintext
 
 def cc_decrypt(encrypted_message, key):
     decryption = ""
@@ -29,5 +36,18 @@ def run_tests():
     print(cc_decrypt("BSUOHWJS", -14))
     print(cc_decrypt("HUQBBOBEDWJUNJMYJXRYWDKCRUH", 135762))
 
+    print('+++++++++++++++')
+    start = time.time()
+    print(cc_bruteforce('DTWVGHQTEG'))
+    end = time.time()
+    print("Took " + str(end-start) + " seconds to decrypt DTWVGHQTEG")
+    start = time.time()
+    print(cc_bruteforce('CSVUFGPSDF'))
+    end = time.time()
+    print("Took " + str(end-start) + " seconds to decrypt CSVUFGPSDF")
+    start = time.time()
+    print(cc_bruteforce('KADCNOXALN'))
+    end = time.time()
+    print("Took " + str(end-start) + " seconds to decrypt KADCNOXALN")
 if __name__ == '__main__':
     run_tests()
