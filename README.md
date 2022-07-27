@@ -79,10 +79,10 @@ For bonus points track how long each varation takes to solve!
   - Caesar - DTWVGHQTEG - BRUTEFORCE - key length (3)
   - Caesar - CSVUFGPSDF - BRUTEFORCE - key length (4)
   - Caesar - KADCNOXALN - BRUTEFORCE - key length (5)
-  - Vigenere - NGRFTCAGZQ - BRUTEFORCE - key length (3)
-  - Vigenere - JSGZMGAXKF - BRUTEFORCE - key length (4)
-  - Vigenere - EGPHYIDMQY - BRUTEFORCE - key length (5)
-  - Vigenere - QEBTEFDEJE - BRUTEFORCE - key length (6) -- Will take a long time (if this takes too long feel free to abort)
+  - Vigenere - EFAWSLRFIH - BRUTEFORCE - key length (3)
+  - Vigenere - UNCZXBWXVA - BRUTEFORCE - key length (4)
+  - Vigenere - URHZSYOEIS - BRUTEFORCE - key length (5)
+  - Vigenere - MFHZIWZFPK - BRUTEFORCE - key length (6) -- Will take a long time (if this takes too long feel free to abort)
 
 # Submit the following
 
